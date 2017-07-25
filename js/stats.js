@@ -15,6 +15,7 @@ window.renderStatistics = function(ctx, names, times) {
   ctx.font = '16px PT Mono';
   drawText(ctx, 'Ура, вы победили!', 140, 40);
   drawText(ctx, 'Список результатов:', 140, 60);
+  
 
   for (var i = 0; i < names.length; i++) {
     height = Math.round(getPercent(times[i], maxTime, COLUMN_HEIGHT));
