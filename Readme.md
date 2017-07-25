@@ -1,6 +1,5 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
-* Студент: [Lemara Seitibraimova](https://up.htmlacademy.ru/javascript/9/user/351399).
 
 ---
 
