@@ -1,5 +1,20 @@
-var setup = document.querySelector('.setup');
-setup.classList.remove('hidden');
+'use strict';
+
+var setupOpenControl = document.querySelector('.setup-open');
+setupOpenControl.addEventListener('click', openSetup);
+
+var setupCloseControl = document.querySelector('.setup-close');
+setupCloseControl.addEventListener('click', closeSetup);
+
+function openSetup() {
+  var setup = document.querySelector('.setup');
+  setup.classList.remove('hidden');
+}
+
+function closeSetup() {
+  var setup = document.querySelector('.setup');
+  setup.classList.add('hidden');
+}
 
 var wizardData = {
   firstNames: ['Иван', 
@@ -81,7 +96,6 @@ function renderWizard (wizard) {
 }
 
 function renderWizards(wizards) {
-  console.log("in render wizards ", wizards)
   var fragment = document.createDocumentFragment();
   var i = 0;
   for (; i < wizards.length; i++) {
@@ -93,4 +107,6 @@ function renderWizards(wizards) {
 
 var setupSimilar = document.querySelector('.setup-similar');
 setupSimilar.classList.remove('hidden');
+
+
 
